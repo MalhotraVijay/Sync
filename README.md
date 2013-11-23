@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Requirements
 Django==1.5.1
 python == 2.5
@@ -19,3 +20,9 @@ Run project
 python manage.py runserver
 
 http://localhost:8000
+=======
+Sync
+====
+
+Syncapp - Project for uploading and sharing files with users in organisation
+>>>>>>> 5f6132243ee3f0b67a6ce187c77f97d20b69ec91
