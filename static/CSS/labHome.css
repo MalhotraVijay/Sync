@@ -1,0 +1,283 @@
+@font-face{
+	font-family: open-sans;
+	src: local(open-sans), url('../fonts/OpenSans-Regular.ttf') format('truetype');	
+	}
+
+@font-face{
+	font-family: open-sans-bold;
+	src: local(open-sans), url('../fonts/OpenSans-Bold.ttf') format('truetype');	
+	}
+
+
+
+body
+{
+	font-family: open-sans;
+}
+
+#loginLayer p
+{
+		font-family: open-sans-bold;
+		font-size: 28px;
+		color: #444444;
+	}
+
+#Mainlayer
+{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1024px;
+	height: 786px;
+}
+
+#Logo
+{
+		position: relative;
+		width: 200px;
+		left: 30px;
+		top: 20px;	
+}
+
+#Logo img
+{
+	width: 250px;
+	height: auto;
+}
+
+
+#labimage img
+{
+	position: absolute;
+	width: 500px;
+	height: auto;
+	left: 80px;
+	top: 0px;
+}
+
+#loginLayer
+{
+	position: absolute;
+	top: 70px;
+	left: 500px;	
+	
+}
+
+#Header
+{
+	position: absolute;
+	left: 280px;
+	top: 30px;
+	padding: 5px;
+	
+}
+
+#addlayer
+{
+	position:relative; 
+	float:left;
+	width:100%; 
+	top:50px;
+	font-size:26px; 
+	border-bottom: 2px solid #0A9BCE;
+	color:#0A9BCE;
+}
+
+#blufflayer
+{
+	position:relative; 
+	float:left;
+	width:100%; 
+	top:18px;
+	height: 400px;
+	background: rgba(230,230,230,0.82);
+	z-index: 3;
+	display: block;
+}
+
+#contentLayer
+{
+	position: relative;
+	top: 50px;
+	
+}
+
+#selectBranch
+{
+	position:relative;
+	left:0px;
+	font-family: open-sans;
+	width:100%; 
+	font-size:26px; 
+	border-bottom: 2px solid #0A9BCE;
+	color:#0A9BCE;
+}
+
+.labDetails
+{
+	position: absolute;
+	width: 100%;	
+}
+
+
+#testdetails .content
+{
+		position: relative;
+		float: left;
+		width: 300px;
+}
+
+
+#manageLabs
+{
+	margin-top: 14px;
+	}
+	
+#deleteLab li{
+	margin-bottom: 15px;
+	}
+
+#deleteLab .deleteLabAnchor
+{
+	position: absolute;
+	left: 400px;
+}
+
+#Sform-outer {
+	position: absolute;
+	left: -70px;
+	top: 150px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background: rgba(250,250,250,0.62);
+	width: 515px;
+	height: 285px;
+	padding: 0 4px;
+	opacity: 0.7;
+
+}
+
+.input{
+	width: 300px;
+	height: 35px;
+	border: 0;
+	background: #E0E0E0;
+	background: -moz-linear-gradient(top, #E0E0E0 0%, #E0E0E0 0%, #E0E0E0 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E0E0E0), color-stop(0%,#E0E0E0), color-stop(100%,#E0E0E0)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C4C4C4', endColorstr='#D3D3D3',GradientType=0 ); /* ie */
+	color: #22222;
+	
+	font-size: 22px;
+	font-family:open-sans;
+	margin-top:3px;
+	margin-bottom:20px;
+	border-top-left-radius: 6px 6px;
+	border-top-right-radius: 6px 6px;
+	border-bottom-right-radius: 6px 6px;
+	border-bottom-left-radius: 6px 6px;	
+	
+}
+
+.input:focus{
+	outline:none;
+	color:#333;
+}
+
+
+
+
+.button
+{
+	width: 250px;
+	height: 40px;
+	background: #679A01;
+	border-top-left-radius: 8px 8px;
+	border-top-right-radius: 8px 8px;
+	border-bottom-right-radius: 8px 8px;
+	border-bottom-left-radius: 8px 8px;	
+	font-family: open-sans;
+	color: #FFF;
+	font-size: 22px;
+	border:0;
+		
+}
+
+.labs
+{
+	width: 200px;
+	height: 30px;
+	background: #EBEBEB;
+	border-top-left-radius: 8px 8px;
+	border-top-right-radius: 8px 8px;
+	border-bottom-right-radius: 8px 8px;
+	border-bottom-left-radius: 8px 8px;	
+	font-family: open-sans;
+	color: #222;
+	font-size: 20px;
+	border:0;
+	padding: 4px;
+}
+
+.labdeselected
+{
+	width: 200px;
+	height: 30px;
+	background: #EBEBEB;
+	border-top-left-radius: 8px 8px;
+	border-top-right-radius: 8px 8px;
+	border-bottom-right-radius: 8px 8px;
+	border-bottom-left-radius: 8px 8px;	
+	font-family: open-sans;
+	font-size: 20px;
+	border:0;
+	padding: 4px;
+}
+
+.labselected
+{
+	width: 200px;
+	height: 30px;
+	background: #0087B6;
+	border-top-left-radius: 8px 8px;
+	border-top-right-radius: 8px 8px;
+	border-bottom-right-radius: 8px 8px;
+	border-bottom-left-radius: 8px 8px;	
+	font-family: open-sans;
+	font-size: 20px;
+	border:0;
+	padding: 4px;
+}
+
+
+.services
+{
+	width: 200px;
+	height: 30px;
+	background: #EBEBEB;
+	border-top-left-radius: 8px 8px;
+	border-top-right-radius: 8px 8px;
+	border-bottom-right-radius: 8px 8px;
+	border-bottom-left-radius: 8px 8px;	
+	font-family: open-sans;
+	color: #222;
+	font-size: 20px;
+	border:0;
+	padding: 4px;
+}
+
+.manageLabsAnchor
+{
+	width: 200px;
+	height: 30px;
+	background: #EBEBEB;
+	border-top-left-radius: 8px 8px;
+	border-top-right-radius: 8px 8px;
+	border-bottom-right-radius: 8px 8px;
+	border-bottom-left-radius: 8px 8px;	
+	font-family: open-sans;
+	color: #222;
+	font-size: 20px;
+	border:0;
+	padding: 4px;
+}
+

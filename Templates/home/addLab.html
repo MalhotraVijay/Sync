@@ -1,0 +1,69 @@
+<html>
+
+<head>
+
+
+<link type="text/css" rel="stylesheet" href="{{STATIC_URL}}CSS/labHome.css" >
+
+</head>
+<body>
+
+<span style="position:absolute; width:99%;  top:80px;"> <hr></span>
+<div id="Mainlayer" >
+
+<div id="Logo">
+<img src="{{MEDIA_URL}}Images/liveHealth.png" alt="Livehealth" width="500" height="90" >
+
+</div>
+
+<div id="Header"> <label style="font-size:26px;"> Chippa laboratory </label>   </div>
+
+
+		<div id="contentLayer"> 
+		
+
+			<div id="labDetails"> 			
+				
+				
+				<span style="position:relative; float:left; width:800px; font-size:26px; border-bottom: 2px solid #0A9BCE; color:#0A9BCE;"> Add Lab   </span>
+				
+		
+									
+			<br><br>
+			<form method="post" action="">
+				{% csrf_token %}
+			<label> Name </label> <br>
+			<input type="text" name="name" class="input" ><br><br>
+			
+			Type <br>
+			<input type="text" name="type" class="input" ><br><br>
+		
+			Address (Main Branch) <br>
+			<input type="text" name="address" class="input" ><br><br>
+		
+			Contact <br>
+			<input type="text" name="contact" class="input" ><br><br>
+			
+			Email <br>
+			<input type="text" name="email" class="input" ><br><br>
+			<br>
+			<center>
+					<input type="submit" value="Add" class="button" >			
+			</center>
+					</form>
+		
+			</div> 
+
+
+ 		</div>
+
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

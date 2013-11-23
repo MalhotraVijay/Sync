@@ -1,0 +1,54 @@
+<html>
+
+<head>
+
+<title>Download Reports</title>
+
+<link type="text/css" rel="stylesheet" href="{{STATIC_URL}}CSS/labHome.css" >
+
+</head>
+<body>
+
+<span style="position:absolute; width:99%;  top:80px;"> <hr></span>
+<div id="Mainlayer" >
+
+<div id="Logo">
+<img src="{{MEDIA_URL}}Images/liveHealth.png" alt="Livehealth" width="500" height="90" >
+
+</div>
+
+<div id="Header"> <label style="position:relative; left:500px; font-size:22px;"> Chippa laboratory </label>   </div>
+
+
+		<div id="contentLayer"> 
+		
+
+			<div id="labDetails"> 			
+				
+				
+				<span style="position:relative; float:left; width:800px; font-size:26px; border-bottom: 2px solid #0A9BCE; color:#0A9BCE;"> Download Reports   </span>
+							<br><br>
+							
+							
+							<ul>
+							{%for report in reports%}
+								<li> <a href="{{MEDIA_URL}}{{ report.upFiles  }}"> {{report.upFiles}} </a> </li>	
+							{% endfor %}
+							</ul>						
+			
+		
+			</div> 
+
+
+ 		</div>
+
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

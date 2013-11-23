@@ -1,0 +1,28 @@
+<html>
+
+<head>
+
+
+</head>
+<body>
+
+Hey there!
+<br>
+All the reports related to the lab : on date 2/2/13
+
+<br>
+
+{% for report in reports%}
+<p> For lab :
+{{report.Lab_id}} &nbsp;&nbsp; of type &nbsp;&nbsp; <b> {{ report.Type}} </b>
+</p>
+
+
+{% endfor %}
+
+
+
+
+
+</body>
+</html>

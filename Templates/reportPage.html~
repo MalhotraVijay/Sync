@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+
+</head>
+<body>
+
+Hey there!
+<br>
+Report for USER: XYZ
+
+<br>
+
+{% for repKey,repValue in reports%}
+
+<p> 
+{{repKey}} &nbsp;&nbsp; : &nbsp;&nbsp; <b> {{ repValue}} </b>
+
+</p>
+
+
+{% endfor %}
+
+
+
+
+
+</body>
+</html>

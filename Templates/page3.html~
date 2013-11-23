@@ -1,0 +1,28 @@
+<html>
+
+<head>
+
+
+</head>
+<body>
+
+Hey there!
+<br>
+All the reports related to the lab : on date 2/2/1013
+
+<br>
+
+{% for repKey,repValue in reports%}
+<p> 
+{{repKey}} &nbsp;&nbsp; of type &nbsp;&nbsp; <b> {{ repValue}} </b>
+</p>
+
+
+{% endfor %}
+
+
+
+
+
+</body>
+</html>

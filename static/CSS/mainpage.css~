@@ -1,0 +1,17 @@
+
+
+
+#Mainlayer
+{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#Logo
+{
+	position: relative;
+	left: 400px;
+	top: 100px;
+}

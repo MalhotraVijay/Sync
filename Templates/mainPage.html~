@@ -1,0 +1,24 @@
+<html>
+
+<head>
+
+
+</head>
+<body>
+
+Hey there!
+<br>
+Click on a particular lab to see the report:
+
+<br>
+
+{% for lab in labs %}
+
+ <a href="/reports/?name={{lab.Name}}" > {{lab.Name}} </a>
+<br>
+
+{%endfor%}
+
+
+</body>
+</html>

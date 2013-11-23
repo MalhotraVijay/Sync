@@ -1,0 +1,97 @@
+<html>
+
+<head>
+
+
+<link type="text/css" rel="stylesheet" href="{{STATIC_URL}}CSS/mainPage.css" >
+
+</head>
+<body>
+
+
+<div id="Mainlayer" >
+
+<div id="Logo">
+<img src="{{MEDIA_URL}}Images/liveHealth.png" alt="Livehealth" width="500" height="90" >
+
+</div>
+
+<div id="Header">   </div>
+
+		<div id="contentLayer"> 
+		
+
+			<div id="testDetails"> 			
+				<span style="position:relative; float:left; width:600px; font-size:26px; border-bottom: 2px solid #CC0000;; color:#CC0000;"> Lab Result   </span>
+				
+				<span style="position:relative; padding-left:15px; font-size:26px; border-bottom: 1px solid #ccc; float:left; width:370px;">  Sanjeev Dhighe (M) 26 </span>
+									
+			<br><br>
+				<label style="font-size:26px;"> {{test.TestName}} </label>   <span style="position:absolute; left:850px; top:60px;" >  {{test.TestDate}} </span> 
+				<hr>
+				
+				
+				
+				<div class="content">  Complete Blood Count 			</div>
+				<div class="content"> Result 				</div>
+				<div class="content"> Reference Range 				</div>
+				<br>
+				<hr>
+				
+					{%for key,val,range in testCategory %}
+					
+							<div class="content">  <br>		{{ key }}		</div>
+				
+							<div class="content">	<br>   {{val}}				</div>   
+				
+							<div class="content">		<br>		{{range}}			</div>
+							
+					{% endfor %}
+					
+						
+				
+				
+				
+				<!--{% for dict in test.testfield %}   
+						
+						{{dict}}
+						
+						{% for key in dict%}
+								
+								{{key}} :  	
+								
+						{% endfor %}						
+							
+				{% endfor %}				
+				
+				{{objj.getval}}
+				
+				
+				<br>
+				
+				{% for testfield in testCategory %}
+				
+					{%for key,val in testfield %}
+						
+						{{ key }}: {{ val }}
+						
+					{% endfor %}
+					
+						
+				{% endfor %}-->
+		
+			</div> 
+
+
+ 		</div>
+
+
+
+
+
+</div>
+
+
+
+</body>
+</html>

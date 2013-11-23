@@ -1,0 +1,33 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<p>   Please click on following link to generate a report  </p>
+
+<button>  Generate report </button>
+
+<div id="reportType"> This content would be LAB-SPECIFIC
+<br>
+Now lets say its,
+
+<br>
+
+1. Bloodtest <br>
+2. Urine Test <br>
+3. ECG test <br>
+4. INR test <br>
+
+ </div>
+
+
+</body>
+
+</html>
+
+
+
+
